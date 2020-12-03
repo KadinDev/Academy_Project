@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10; /* Header fica por cima do vídeo */
+}
+
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.toogle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url('/src/menu.png');
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toogle.active {
+    background: url('/src/close.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.banner.active {
+    right: 300px;
+    transition: 0.6s;
+}
+
+section video {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Pegando toda a tela */
+}
+
+.overlay {
+    background: linear-gradient(#111a, #000, #111a);
+    mix-blend-mode: overlay; /* Efeitos do background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    z-index: 8;
+    color: #fff;
+    position: relative;
+    max-width: 500px;
+}
+
+.text h2 {
+    font-size: 60px;
+    line-height: 63px;
+}
+
+.text h3 {
+    font-size: 22px;
+    line-height: 24px;
+    text-align: right;
+    margin: 5px 0px 15px 0px;
+    letter-spacing: 4px;
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.text a {
+    text-decoration: none;
+    color: whitesmoke;
+    background: linear-gradient(rgba(0, 0, 0, 0.616), rgba(255, 255, 255, 0.5), #ff4f4f52);
+    mix-blend-mode: color-dodge;
+    position: absolute;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+.text a:hover {
+    background: linear-gradient(#222, #444, #000);
+    mix-blend-mode: color-dodge;
+}
+
+.links {
+    z-index: 8;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links li {
+    list-style: none;
+}
+
+.links li a {
+    margin-right: 20px;
+    filter: invert(1);
+}
+
+.links li a img {
+    height: 25px;
+}
+
+
+.menu {
+    position: fixed;
+    right: 0;
+    background: #fff;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 25px;
+    color: black;
+    display: inline-block; /* para o margin poder pegar */
+    margin-bottom: 20px;
+}
+
+.menu li a:hover {
+    color: red;
+}
+

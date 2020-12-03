@@ -3,6 +3,7 @@
 > Projeto para Academia
 
 - **Page**
-![enter image description here](!%5B1%5D%28https://user-images.githubusercontent.com/65264902/101065449-f00fa380-3573-11eb-8f3c-bc27ca97f0e2.jpg%29)
+![1](https://user-images.githubusercontent.com/65264902/101066103-bee3a300-3574-11eb-8122-6ec24e78632c.jpg)
+
 - **Menu**
-![enter image description here](!%5B2%5D%28https://user-images.githubusercontent.com/65264902/101065972-952a7c00-3574-11eb-8558-ce20886aa9ef.jpg%29)
+![2](https://user-images.githubusercontent.com/65264902/101066146-c86d0b00-3574-11eb-8b35-2bbb371614f0.jpg)
